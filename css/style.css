@@ -1,0 +1,30 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'cinzel', serif;
+  text-align: center;
+}
+
+p {
+  font-family: 'lato', sans-serif;
+  font-size: 18px;
+}
+
+.logo {
+	text-transform: uppercase;
+  background: linear-gradient(to right, #5bcefa, #f5a9b8 25%, #ffffff 50%, #f5a9b8 75%, #5bcefa 100%);
+  -webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  font-family: 'lato', sans-serif;
+  font-weight: 700;
+  font-size: 3em;
+}
+
+.sublogo {
+  font-size: 0.7em;
+  text-color: white;
+  width: 0px;
+}
+
+.gastname {
+  text-align: left;
+  font-weight: 700;
+}

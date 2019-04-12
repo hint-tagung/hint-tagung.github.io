@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <a class="navbar-brand" href="/index.html">
+    <div class="container">
+      <div class="row my-0">
+        <div class="col-sm-12">
+          <h1 class="logo my-0">HINT</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <h6 class="sublogo my-0">Hansa Inter Trans</h6>
+        </div>
+        <div class="col-sm-12">
+          <h6 class="sublogo my-0">Nonbinary Tagung</h6>
+        </div>
+      </div>
+    </div>
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  <ul class="navbar-nav mr-auto">
+  {% for p in site.data.nav %}
+  {% if p.titel == page.titel %}
+  <li class="nav-item active"><a class="nav-link" href="{{p.url}}">{{p.titel}}
+      <span class="sr-only"> (aktuell)</span></a></li>
+  {% else %}
+  <li class="nav-item"><a class="nav-link" href="{{p.url}}">{{p.titel}}</a></li>
+  {% endif %}
+  {% endfor %}
+  <li class="nav-item"><a class="nav-link" href="https://www.cornelia-mertens.de/wp3/">Blog</a></li>
+  </ul>
+  </div>
+<!--  <form class="form-inline" action="https://t7c89ca4e.emailsys1a.net/95/2765/2e3e338939/subscribe/form.html" method="post">
+    <div style="position:absolute; z-index: -100; left:-6000px;" aria-hidden="true">
+      <label for="rm_email">E-Mail: </label>
+      <input type="text" name="rm_email" id="rm_email" value="" tabindex="-1" />
+      <label for="rm_comment">Comment: </label>
+      <textarea name="rm_comment" tabindex="-1" id="rm_comment"></textarea>
+    </div>
+    <div class="input-group">
+      <label class="mr-sm-2" for="email"><strong>Unser Newsletter</strong></label>
+      <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Email" 
+                                                           name="email" id="email" value="" />
+    </div>
+    <button type="submit" class="btn btn-primary mb-2">Anmelden</button>
+</form> -->
+</nav>
